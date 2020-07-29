@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    background-image: url('../assets/img/banner.png');
+    height: 277px;
+}
+
+.logo {
+    padding-top: 58px;
+    padding-left: 93px;
+}
+
+.pack {
+    margin-left: 235px;
+}
+
+.pack-delivery {
+    padding-top: 46px;
+    padding-left: 66px;
+}
+
+.arrow {
+    padding-top: 145px;
+    padding-left: 190px;
+}
