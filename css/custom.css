@@ -6,6 +6,20 @@
     justify-content: space-around;
 }
 
+.splash {
+    background-image: url('../assets/img/splash\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loading-png {
+    width: 200px;
+    margin: auto;
+}
+
 .logo {
     padding-top: 58px;
 }
@@ -18,6 +32,10 @@
     padding-top: 75px;
 }
 
+.my-auto {
+    height: calc(100% - 341px);
+}
+
 .card {
     border: none;
 }
@@ -27,6 +45,16 @@
     padding-top: 5px;
 }
 
+#recipeCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 70%;
+}
+
 .pt-page {
     width: 100%;
     height: 100%;
@@ -34,7 +62,7 @@
     top: 0;
     left: 0;
     visibility: hidden;
-    overflow: hidden;
+    overflow-x: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -141,6 +169,7 @@
     }
     .footer {
         overflow: hidden;
+        margin-top: 140px;
     }
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
@@ -149,6 +178,9 @@
     .carousel-inner .carousel-item-left.active,
     .carousel-inner .carousel-item-prev {
         transform: translateX(-33.333%);
+    }
+    .img-fluid {
+        max-width: 100%;
     }
 }
 
@@ -172,19 +204,9 @@
         overflow: hidden;
     }
     .footer-tab {
-        margin-top: 170px;
+        margin-top: 176px;
     }
 }
-
-@media (min-width: 1200px) {
-    .card-body {
-        padding: 5.25rem;
-        padding-top: 5px;
-    }
-}
-
-
-/* // Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 768px) {
     .pack,
@@ -195,21 +217,35 @@
         display: none;
     }
     .episode {
-        top: -274px;
+        top: -257px;
     }
     .footer {
         overflow: hidden;
+        margin-top: 0px;
     }
     .footer-tab {
         display: none;
+        margin-top: 310px;
     }
     .footer-description {
-        margin-top: 370px;
+        margin-top: 330px;
     }
     .carousel-inner .carousel-item>div {
         display: none;
     }
     .carousel-inner .carousel-item>div:first-child {
         display: block;
+    }
+}
+
+@media (max-width: 706px) {
+    .episode {
+        top: -275px;
+    }
+}
+
+@media (max-width: 498px) {
+    .episode {
+        top: -291px;
     }
 }

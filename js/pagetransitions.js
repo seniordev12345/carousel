@@ -49,6 +49,7 @@ var PageTransitions = (function() {
         });
 
     }
+    setTimeout(function() { nextPage(1); }, 6000);
 
     function nextPage(options) {
         var animation = (options.animation) ? options.animation : options;
