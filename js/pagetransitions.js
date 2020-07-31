@@ -49,7 +49,7 @@ var PageTransitions = (function() {
         });
 
     }
-    setTimeout(function() { nextPage(1); }, 6000);
+    setTimeout(function() { nextPage(5); }, 6000);
 
     function nextPage(options) {
         var animation = (options.animation) ? options.animation : options;
@@ -100,7 +100,7 @@ var PageTransitions = (function() {
                 break;
             case 5:
                 outClass = 'pt-page-fade';
-                inClass = 'pt-page-moveFromRight pt-page-ontop';
+                inClass = 'pt-page-moveFromLeft pt-page-ontop';
                 break;
             case 6:
                 outClass = 'pt-page-fade';

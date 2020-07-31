@@ -27,6 +27,7 @@
 
 .pack {
     padding-top: 20px;
+    margin-right: 140px;
 }
 
 .pack-delivery {
@@ -97,7 +98,7 @@
 
 .price-btn {
     width: 179px;
-    height: 44px;
+    height: 52px;
     background-color: white;
     border: 1px solid #05519E;
     border-radius: 10px;
@@ -160,7 +161,7 @@
 
 .episode-txt {
     margin-top: 34px;
-    margin-left: 3px;
+    margin-right: 3px;
     font-size: 22px;
     font-family: 'Gotham-Black';
 }
@@ -169,9 +170,30 @@
     margin-left: 8px;
 }
 
+.pack-img {
+    width: 248px;
+    height: 150px;
+}
+
 @media (max-width: 1366px) {
+    .logo-img {
+        width: 80%;
+    }
+    .pack-img {
+        width: 200px;
+        height: 120px;
+    }
+    .pack-delivery-img {
+        width: 80%;
+    }
+    .logo {
+        padding-top: 30px;
+    }
+    .pack {
+        padding-top: 15px;
+    }
     .header {
-        height: 162px;
+        height: 140px;
     }
     .footer {
         margin-top: 46px;
@@ -182,11 +204,12 @@
     .episode {
         width: 320px;
         height: 120px;
-        top: -196px;
+        top: -117px;
     }
     .listeilor {
         width: 140px;
         height: 140px;
+        top: -20px;
     }
     .ico-wsp {
         width: 80px;
@@ -281,9 +304,6 @@
     .logo {
         padding-top: 30px;
     }
-    .pack-delivery {
-        /* display: none; */
-    }
     .episode {
         top: -196px;
     }
@@ -314,6 +334,17 @@
 
 @media (max-width: 498px) {
     .episode {
-        top: -232px;
+        top: -206px;
+    }
+    .pack-delivery {
+        display: none;
+    }
+    .footer-description {
+        margin-top: 160px;
+    }
+    .footer-description>p {
+        font-size: 8px;
+        padding: 10px;
+        padding-top: 0;
     }
 }
